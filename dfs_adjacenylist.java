@@ -11,12 +11,10 @@ public class dfs_adjacenylist {
 
 		while (!stack.isEmpty()) {
 			int vertex = stack.pop();
-
 			if (!visited.contains(vertex)) {
 				System.out.println(vertex);
 				visited.add(vertex);
 			}
-
 			Iterator<Integer> itr = adj_list[vertex].iterator();
 			while (itr.hasNext()) {
 				int v = itr.next();
@@ -25,7 +23,6 @@ public class dfs_adjacenylist {
 				}
 			}
 		}
-
 	}
 
 	static void addEdge(int x, int y) {
