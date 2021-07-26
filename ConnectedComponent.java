@@ -20,7 +20,6 @@ public class ConnectedComponent {
 				count++;
 			}
 		}
-
 		System.out.println("Hence, Total " + count + " connected Component");
 	}
 
@@ -33,7 +32,6 @@ public class ConnectedComponent {
 				System.out.print(v + " ");
 				visited.add(v);
 			}
-
 			Iterator<Integer> itr = adj_list[v].iterator();
 			while (itr.hasNext()) {
 				int n = itr.next();
